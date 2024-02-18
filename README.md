@@ -3,24 +3,6 @@ A Simple project to get started with dbt, Elementary and BigQuery
 ### Using the project
 
 
-
-### To install elementary
-    pip install elementary
-
-### Installing elementary-data
-    pip install elementary-data
-
-### To Install elementary-data for BigQuery
-    pip install 'elementary-data[bigquery]'
-
-### Share observability report to Google Cloud Storage bucket 
-    edr send-report --google-service-account-path <SERVICE_ACCOUNT_PATH> --gcs-bucket-name <BUCKET_NAME>
-
-
-### Share observability report
-    edr send-report
-
-
 ### Add elementary to `packages.yml`
 
 Add the following to your packages.yml file (if missing, create it where dbt_project.yml is):
@@ -84,6 +66,13 @@ Add the following to your dbt_project.yml file:
             threads: 4
             location: [dataset location]
             priority: interactive
+
+### Share observability report to Google Cloud Storage bucket 
+    edr send-report --google-service-account-path <SERVICE_ACCOUNT_PATH> --gcs-bucket-name <BUCKET_NAME>
+
+
+### Share observability report
+    edr send-report
 
 
 ### Resources:
