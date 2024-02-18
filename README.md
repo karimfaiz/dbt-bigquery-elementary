@@ -88,34 +88,6 @@ Add the following to your dbt_project.yml file:
 
 ### Resources:
 
-
-Try running the following commands:
-
-    dbt build # build all models
-    dbt run # build all models
-    dbt run --models <model_name> # build a specific model
-    dbt run --models <model_name> --target <target_name> # build a specific model for a specific target
-    dbt test # run all tests
-    dbt test --models <model_name> # run tests for a specific model
-    dbt test --models <model_name> --target <target_name> # run tests for a specific model for a specific target
-    dbt seed # run all seeds
-    dbt seed --full-refresh # run all seeds with full refresh
-    dbt seed --models <model_name> # run a specific seed
-    dbt seed --models <model_name> --full-refresh # run a specific seed with full refresh
-    dbt deps # install all dependencies
-    dbt debug # debug your dbt project
-    dbt docs generate # generate documentation
-    dbt docs serve  # serve documentation
-    dbt snapshot # run all snapshots
-    dbt snapshot --select <model_name> # run a specific snapshot
-    dbt snapshot --select <model_name> --target <target_name> # run a specific snapshot for a specific target
-    edr report  # generate observability report
-    edr report --select last_invocation # generate observability report for last invocation
-    edr report --select last_invocation --target <target_name> # generate observability report for last invocation for a specific target
-    dbt run --select elementary # build elementary
-
-
-
 ##### Dbt docs: 
 - Learn more about  [dbt](https://docs.getdbt.com/docs/introduction)
 
